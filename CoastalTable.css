@@ -403,13 +403,13 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 2rem;
-  height: 2rem;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card-image img {
-  width: 25rem;
-  height: 25rem;
+  width: 25vw;
+  height: 25vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -461,7 +461,7 @@ section {
 .card2 {
   display: grid;
   grid-template-areas:
-    "image title title"
+    "title title title"
     "image text text"
     "image text text";
   grid-template-columns: 1.6fr 3fr;
