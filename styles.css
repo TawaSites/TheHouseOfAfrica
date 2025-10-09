@@ -15,6 +15,24 @@ html, body {
   background: url('Background.jpg') center/cover no-repeat;
 }
 
+.CTBG {
+  background: url('CoastalTable.png') center/cover no-repeat;
+}
+.NLBG {
+  background: url('NeonLounge.png') center/cover no-repeat;
+}
+.SPBG {
+  background: url('SpicePot.png') center/cover no-repeat;
+}
+
+.OTFBG {
+  background: url('OverTheFire.png') center/cover no-repeat;
+}
+
+.MRBG {
+  background: url('MuralRoom.png') center/cover no-repeat;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -38,7 +56,7 @@ html, body {
   list-style: none;
   gap: 1.14em;
   justify-content: right;
-  margin-right: -20vw;
+  margin-right: 0vw;
 }
 
 
@@ -431,14 +449,9 @@ section {
 .card {
   display: grid;
   grid-template-areas:
-    "title title title"
-    "image text text"
-    "image text text"
-    "image text text"
-    "image text text"
-    "image text text"
-    "image text text"
-    "image link link";
+    "title title"
+    "text text"
+    "link link";
   grid-template-columns: 1.6fr 3fr;
   gap: 0.4rem;
   max-width: 90vw;
@@ -606,12 +619,17 @@ section {
     font-size: 2rem;
   }
   .about-image {
-    width: 50vw;
+    display: none;
   }
   .about {
-  height: 107vh;
+    height: 107vh;
   }
-    .card2-title {
-    font-size: 2rem;
+
+  .about-text {
+    font-size: 24px;
+  }
+
+  .card2-title {
+   font-size: 2rem;
   }
 }
