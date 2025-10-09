@@ -29,7 +29,7 @@ html, body {
 }
 
 .logo-text img {
-  height: 4rem;
+  height: 3rem;
 }
 
 .nav-links {
@@ -41,13 +41,6 @@ html, body {
   margin-right: 0vw;
 }
 
-
-@media (max-width: 800px) {
-  .nav-links {
-    margin-right: -5vw;
-  }
-}
-
 .nav-links li a {
   display: inline-block;
   text-decoration: none;
@@ -56,33 +49,30 @@ html, body {
 }
 
 .nav-black {
-	color: #000; 
-	background: #fff; 
-	padding: 0.5rem 0.8rem; 
-	border-radius: 5px; 
+  color: #000; 
+  background: #fff; 
+  padding: 0.5rem 0.8rem; 
+  border-radius: 5px; 
 }
 .nav-gold {
-	color: #FFB612; 
-	padding: 0.5rem 0.8rem; 
-	border-radius: 5px; 
-
+  color: #FFB612; 
+  padding: 0.5rem 0.8rem; 
+  border-radius: 5px; 
 }
 .nav-green {
-	color: #007A4D; 
-	padding: 0.5rem 0.8rem; 
-	border-radius: 5px; 
-
+  color: #007A4D; 
+  padding: 0.5rem 0.8rem; 
+  border-radius: 5px; 
 }
 .nav-red {
-	color: #DE3831;
-	padding: 0.5rem 0.8rem; 
-	border-radius: 5px; 
-
+  color: #DE3831;
+  padding: 0.5rem 0.8rem; 
+  border-radius: 5px; 
 }
 .nav-blue {
-	color: #002395;
-	padding: 0.5rem 0.8rem; 
-	border-radius: 5px; 
+  color: #002395;
+  padding: 0.5rem 0.8rem; 
+  border-radius: 5px; 
 }
 
 .nav-links li a:hover {
@@ -101,18 +91,18 @@ html, body {
 .hero-overlay {
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 12px;
-  width: 80%;
+  width: 90%;
 }
 
 .hero-overlay h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #FFB612;
 }
 
 .hero-overlay p {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 1rem 0;
 }
 
@@ -135,7 +125,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 3rem 1rem;
   background: #111;
 }
 
@@ -275,7 +265,7 @@ html, body {
 
 .contact {
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 3rem 1rem;
   background: #222;
 }
 
@@ -293,22 +283,6 @@ footer {
   color: #ccc;
   width: 100%;
   margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .about {
-    flex-direction: column;
-  }
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .divider {
-    display: none;
-  }
-  .about-divider {
-    display: none;
-  }
 }
 
 .divider {
@@ -337,29 +311,19 @@ footer {
   height: auto;
 }
 
-@media (max-width: 600px) {
-  .logo-text {
-    height: 2rem;
-    margin-top: -2rem;
-  }
-  .navbar {
-    padding: 2rem 3.5rem;
-  }
-}
-
 section {
   position: relative;
-  padding: 5rem 2rem;
+  padding: 3rem 1rem;
 }
 
-.about, .coataltable, .atmosphere, .contact {
+.about, .coastaltable, .atmosphere, .contact {
   text-align: center;
 }
 
 .about {
   background: #111; 
 }
-.coataltable {
+.coastaltable {
   background: #222;
 }
 .atmosphere {
@@ -402,44 +366,16 @@ section {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 1223px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: #000;
-    flex-direction: column;
-    width: 200px;
-    padding: 1rem;
-    gap: 1rem;
-    border-radius: 8px 0 0 8px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .card-title {
-    font-size: 10vh;
-  }
-}
-
 .card {
   display: grid;
   grid-template-areas:
-    "title title image"
-    "text text image"
-    "text text image";
-  grid-template-columns: 1.6fr 3fr;
-  gap: 0.4rem;
+    "title"
+    "image"
+    "text";
+  gap: 1rem;
   max-width: 90vw;
-  margin: 0rem auto;
-  padding: 2rem;
+  margin: 1rem auto;
+  padding: 1.5rem;
   border-radius: 12px;
   color: #fff;
   background: rgb(0, 0, 0, 0.7);
@@ -448,25 +384,25 @@ section {
 .card-title {
   grid-area: title;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 12px;
-  font-size: 4rem;
-  width: 95%;
-  margin-left: 0vw;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   background: #111;
 }
 
 .card-image {
   grid-area: image;
-  width: 25vw;
-  height: 25vw;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .card-image img {
-  width: 25vw;
-  height: 25vw;
+  width: 80%;
+  height: auto;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -477,14 +413,14 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  width: 95%;
+  font-size: 1rem;
 }
 
 .card-link a {
   display: inline-flex;     
   justify-content: center;  
   align-items: center;       
-  padding: 2vw 20vw;     
+  padding: 1rem 2rem;     
   background: #FFB612;       
   color: #000;              
   border-radius: 8px;           
@@ -518,19 +454,13 @@ section {
 .card2 {
   display: grid;
   grid-template-areas:
-    "title title title"
-    "text text image"
-    "text text image"
-    "text text image"
-    "text text image"
-    "text text image"
-    "text text image"
-    "link link image";
-  grid-template-columns: 1.6fr 3fr;
-  gap: 0.4rem;
+    "title"
+    "image"
+    "text";
+  gap: 1rem;
   max-width: 90vw;
-  margin: 0rem auto;
-  padding: 2rem;
+  margin: 1rem auto;
+  padding: 1.5rem;
   border-radius: 12px;
   color: #fff;
   background: rgb(0, 0, 0, 0.7);
@@ -539,25 +469,25 @@ section {
 .card2-title {
   grid-area: title;
   text-align: center;
-  padding: 0.3rem;
+  padding: 0.5rem;
   border-radius: 12px;
-  font-size: 4rem;
-  width: 50%;
-  margin-left: 20vw;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   background: #111;
 }
 
 .card2-image {
   grid-area: image;
-  width: 25vw;
-  height: 25vw;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .card2-image img {
-  width: 25vw;
-  height: 25vw;
+  width: 80%;
+  height: auto;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -568,6 +498,7 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
+  font-size: 1rem;
 }
 
 .card2-link {
@@ -582,7 +513,7 @@ section {
   display: inline-flex;     
   justify-content: center;  
   align-items: center;       
-  padding: 2vw 20vw;     
+  padding: 1rem 2rem;     
   background: #FFB612;       
   color: #000;              
   border-radius: 8px;           
@@ -598,85 +529,101 @@ section {
   transform: scale(1.2);
 }
 
-@media (max-width: 762px) {
-  .card-title {
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #000;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  .about-divider {
+    display: none;
+  }
+  
+  .hero-overlay {
+    padding: 1.5rem;
+    width: 90%;
+  }
+  
+  .hero-overlay h1 {
     font-size: 2rem;
   }
-  .about-image {
-    width: 50vw;
+  
+  .hero-overlay p {
+    font-size: 1rem;
   }
+  
   .about {
-    min-height: 100vh; 
-    height: auto;     
+    padding: 2rem 0.5rem;
   }
-  .card2-title {
+  
+  .about-text h2 {
     font-size: 2rem;
   }
-}
-
-.card2 {
-  display: grid;
-  grid-template-areas:
-    "image title title"
-    "image text text"
-    "image text text";
-  grid-template-columns: 1.6fr 3fr;
-  gap: 0.4rem;
-  max-width: 90vw;
-  margin: 0rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  background: rgb(0, 0, 0, 0.7);
-}
-
-.card2-title {
-  grid-area: title;
-  text-align: center;
-  padding: 0.3rem;
-  border-radius: 12px;
-  font-size: 4rem;
-  width: 95%;
-  margin-left: 0vw;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  background: #111;
-}
-
-.card2-image {
-  grid-area: image;
-  width: 25vw;
-  height: 25vw;
-}
-
-.card2-image img {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 10px;
-  display: block;
-  border: 6px solid #007A4D;
-}
-
-.card2-text {
-  grid-area: text;
-  background: #222;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 95%;
-}
-
-@media (max-width: 762px) {
-  .card2 {
-    grid-template-areas:
-      "title title title"
-      "image image image"
-      "text text text";
-    }
-  .card {
-    grid-template-areas:
-      "title title title"
-      "image image image"
-      "text text text";
+  
+  section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .contact {
+    padding: 2rem 0.5rem;
+  }
+  
+  .contact-overlay {
+    padding: 1.5rem;
+  }
+  
+  .card, .card2 {
+    margin-bottom: 1.5rem;
   }
 }
- 
+
+@media (max-width: 480px) {
+  .logo-text img {
+    height: 2.5rem;
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+  
+  .about-text h2 {
+    font-size: 1.8rem;
+  }
+  
+  .card-title, .card2-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-text, .card2-text {
+    font-size: 0.9rem;
+  }
+}
