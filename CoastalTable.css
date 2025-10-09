@@ -29,7 +29,7 @@ html, body {
 }
 
 .logo-text img {
-  height: 3rem;
+  height: 4rem;
 }
 
 .nav-links {
@@ -39,6 +39,12 @@ html, body {
   gap: 1.14em;
   justify-content: right;
   margin-right: 0vw;
+}
+
+@media (max-width: 800px) {
+  .nav-links {
+    margin-right: -5vw;
+  }
 }
 
 .nav-links li a {
@@ -91,18 +97,18 @@ html, body {
 .hero-overlay {
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
+  padding: 4rem;
   border-radius: 12px;
-  width: 90%;
+  width: 80%;
 }
 
 .hero-overlay h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #FFB612;
 }
 
 .hero-overlay p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 1rem 0;
 }
 
@@ -125,7 +131,7 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 5rem 2rem;
   background: #111;
 }
 
@@ -265,7 +271,7 @@ html, body {
 
 .contact {
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 5rem 2rem;
   background: #222;
 }
 
@@ -313,7 +319,7 @@ footer {
 
 section {
   position: relative;
-  padding: 3rem 1rem;
+  padding: 5rem 2rem;
 }
 
 .about, .coastaltable, .atmosphere, .contact {
@@ -369,13 +375,14 @@ section {
 .card {
   display: grid;
   grid-template-areas:
-    "title"
-    "image"
-    "text";
-  gap: 1rem;
+    "title title image"
+    "text text image"
+    "text text image";
+  grid-template-columns: 1.6fr 3fr;
+  gap: 0.4rem;
   max-width: 90vw;
-  margin: 1rem auto;
-  padding: 1.5rem;
+  margin: 0rem auto;
+  padding: 2rem;
   border-radius: 12px;
   color: #fff;
   background: rgb(0, 0, 0, 0.7);
@@ -384,25 +391,25 @@ section {
 .card-title {
   grid-area: title;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 12px;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  width: 95%;
+  margin-left: 0vw;
+  margin-bottom: 2rem;
   font-weight: bold;
   background: #111;
 }
 
 .card-image {
   grid-area: image;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card-image img {
-  width: 80%;
-  height: auto;
+  width: 25vw;
+  height: 25vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -413,14 +420,14 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  font-size: 1rem;
+  width: 95%;
 }
 
 .card-link a {
   display: inline-flex;     
   justify-content: center;  
   align-items: center;       
-  padding: 1rem 2rem;     
+  padding: 2vw 20vw;     
   background: #FFB612;       
   color: #000;              
   border-radius: 8px;           
@@ -454,13 +461,14 @@ section {
 .card2 {
   display: grid;
   grid-template-areas:
-    "title"
-    "image"
-    "text";
-  gap: 1rem;
+    "image title title"
+    "image text text"
+    "image text text";
+  grid-template-columns: 1.6fr 3fr;
+  gap: 0.4rem;
   max-width: 90vw;
-  margin: 1rem auto;
-  padding: 1.5rem;
+  margin: 0rem auto;
+  padding: 2rem;
   border-radius: 12px;
   color: #fff;
   background: rgb(0, 0, 0, 0.7);
@@ -469,25 +477,25 @@ section {
 .card2-title {
   grid-area: title;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 12px;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  width: 95%;
+  margin-left: 0vw;
+  margin-bottom: 2rem;
   font-weight: bold;
   background: #111;
 }
 
 .card2-image {
   grid-area: image;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
+  width: 25vw;
+  height: 25vw;
 }
 
 .card2-image img {
-  width: 80%;
-  height: auto;
+  width: 25vw;
+  height: 25vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -498,7 +506,7 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  font-size: 1rem;
+  width: 95%;
 }
 
 .card2-link {
@@ -513,7 +521,7 @@ section {
   display: inline-flex;     
   justify-content: center;  
   align-items: center;       
-  padding: 1rem 2rem;     
+  padding: 2vw 20vw;     
   background: #FFB612;       
   color: #000;              
   border-radius: 8px;           
@@ -529,12 +537,12 @@ section {
   transform: scale(1.2);
 }
 
-/* Mobile-specific styles */
-@media (max-width: 768px) {
+/* Mobile Responsiveness */
+@media (max-width: 1223px) {
   .nav-links {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 0;
     background: #000;
     flex-direction: column;
@@ -551,7 +559,138 @@ section {
   .hamburger {
     display: flex;
   }
+
+  .card-title {
+    font-size: 10vh;
+  }
+}
+
+@media (max-width: 762px) {
+  .card-title {
+    font-size: 2rem;
+  }
+  .about-image {
+    width: 50vw;
+  }
+  .about {
+    min-height: 100vh; 
+    height: auto;     
+  }
+  .card2-title {
+    font-size: 2rem;
+  }
   
+  /* Improved mobile card layout */
+  .card {
+    grid-template-areas:
+      "title title title"
+      "image image image"
+      "text text text";
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .card-image {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+  }
+  
+  .card-image img {
+    width: 80vw;
+    height: 80vw;
+  }
+  
+  .card-text {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .card2 {
+    grid-template-areas:
+      "title title title"
+      "image image image"
+      "text text text";
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card2-title {
+    font-size: 1.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .card2-image {
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+  }
+  
+  .card2-image img {
+    width: 80vw;
+    height: 80vw;
+  }
+  
+  .card2-text {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Hero section mobile adjustments */
+  .hero-overlay {
+    width: 90%;
+    padding: 2rem;
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+  
+  /* Section adjustments */
+  section {
+    padding: 3rem 1rem;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+  }
+  
+  /* Navigation adjustments */
+  .logo-text img {
+    height: 3rem;
+  }
+  
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Contact section adjustments */
+  .contact-overlay {
+    padding: 1.5rem;
+  }
+  
+  .contact-overlay h2 {
+    font-size: 2rem;
+  }
+  
+  /* Hide dividers on mobile */
   .divider {
     display: none;
   }
@@ -559,64 +698,20 @@ section {
   .about-divider {
     display: none;
   }
-  
-  .hero-overlay {
-    padding: 1.5rem;
-    width: 90%;
-  }
-  
-  .hero-overlay h1 {
-    font-size: 2rem;
-  }
-  
-  .hero-overlay p {
-    font-size: 1rem;
-  }
-  
-  .about {
-    padding: 2rem 0.5rem;
-  }
-  
-  .about-text h2 {
-    font-size: 2rem;
-  }
-  
-  section {
-    padding: 2rem 0.5rem;
-  }
-  
-  .contact {
-    padding: 2rem 0.5rem;
-  }
-  
-  .contact-overlay {
-    padding: 1.5rem;
-  }
-  
-  .card, .card2 {
-    margin-bottom: 1.5rem;
-  }
 }
 
-@media (max-width: 480px) {
-  .logo-text img {
-    height: 2.5rem;
+@media (max-width: 600px) {
+  .logo-text {
+    height: 2rem;
+    margin-top: -2rem;
   }
-  
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 2rem 3.5rem;
   }
   
+  /* Even smaller adjustments for very small screens */
   .hero-overlay h1 {
-    font-size: 1.8rem;
-  }
-  
-  .hero-overlay p {
-    font-size: 0.9rem;
-  }
-  
-  .about-text h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .card-title, .card2-title {
