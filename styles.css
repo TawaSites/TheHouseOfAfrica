@@ -142,6 +142,7 @@ html, body {
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.3s ease;
+  margin-right: 2rem;
 }
 
 .cta:hover {
