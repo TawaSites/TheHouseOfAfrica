@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 969px) {
+  .divider {
+    display: none;
+  }
+  .about-divider {
+    display: none; 
+  }
+}
+
 html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
