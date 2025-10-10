@@ -11,6 +11,19 @@ html, body {
   background: url('CoastalTable.png') center/cover no-repeat;
 }
 
+h2 {
+  grid-area: title;
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 12px;
+  font-size: 4rem;
+  width: 97.3%;
+  margin-left: 1.3vw;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: #111;
+}
+
 .BG {
   background: url('CoastalTable.png') center/cover no-repeat;
 }
