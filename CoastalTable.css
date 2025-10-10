@@ -403,13 +403,13 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 25vw;
-  height: 25vw;
+  width: 15vw;
+  height: 15vw;
 }
 
 .card-image img {
-  width: 25vw;
-  height: 25vw;
+  width: 15vw;
+  height: 15vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -489,13 +489,13 @@ section {
 
 .card2-image {
   grid-area: image;
-  width: 25vw;
-  height: 25vw;
+  width: 15vw;
+  height: 15vw;
 }
 
 .card2-image img {
-  width: 25vw;
-  height: 25vw;
+  width: 15vw;
+  height: 15vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
