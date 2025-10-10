@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
-  background: url('CoastalTable.png') center/cover no-repeat;
+  background: url('SpicePot.png') center/cover no-repeat;
 }
 
 h2 {
@@ -24,7 +24,7 @@ h2 {
 }
 
 .BG {
-  background: url('CoastalTable.png') center/cover no-repeat;
+  background: url('SpicePot.png') center/cover no-repeat;
 }
 
 .startersbg {
@@ -114,7 +114,7 @@ h2 {
 }
 
 .hero {
-  background: url('CoastalTable.png') center/cover no-repeat;
+  background: url('SpicePot.png') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -298,7 +298,7 @@ h2 {
 }
 
 .contact {
-  background: url(CoastalTable.png) center / cover no-repeat;
+  background: url(SpicePot.png) center / cover no-repeat;
   text-align: center;
   padding: 5rem 2rem;
   background: #222;
@@ -365,7 +365,7 @@ section {
   background: #111;
 }
 .contact {
-  background: url(CoastalTable.png) center / cover no-repeat;
+  background: url(SpicePot.png) center / cover no-repeat;
 }
 
 .contact-overlay {
