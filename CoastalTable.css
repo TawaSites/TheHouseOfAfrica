@@ -28,19 +28,19 @@ h2 {
 }
 
 .startersbg {
-  background: url('ImageOne.png') center/cover no-repeat;
+  background: url('CT1.png') center/cover no-repeat;
 }
 
 .mainsbg {
-  background: url('ImageTwo.png') center/cover no-repeat;
+  background: url('CT2.png') center/cover no-repeat;
 }
 
 .dessertsbg {
-  background: url('ImageThree.png') center/cover no-repeat;
+  background: url('CT3.png') center/cover no-repeat;
 }
 
 .drinksbg {
-  background: url('ImageFour.png') center/cover no-repeat;
+  background: url('CT4.png') center/cover no-repeat;
 }
 
 .navbar {
