@@ -270,6 +270,7 @@ html, body {
 }
 
 .contact {
+  background: url(CoastalTable.png) center / cover no-repeat;
   text-align: center;
   padding: 5rem 2rem;
   background: #222;
@@ -336,7 +337,7 @@ section {
   background: #111;
 }
 .contact {
-  background: url('CoastalTable.png');
+  background: url(CoastalTable.png) center / cover no-repeat;
 }
 
 .contact-overlay {
