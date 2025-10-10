@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
   color: #fff;
-  background: url('NeonLounge.png') center/cover no-repeat;
+  background: url('CoastalTable.png') center/cover no-repeat;
 }
 
 h2 {
@@ -24,7 +24,7 @@ h2 {
 }
 
 .BG {
-  background: url('NeonLounge.png') center/cover no-repeat;
+  background: url('CoastalTable.png') center/cover no-repeat;
 }
 
 .startersbg {
@@ -114,7 +114,7 @@ h2 {
 }
 
 .hero {
-  background: url('NeonLounge.png') center/cover no-repeat;
+  background: url('CoastalTable.png') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -298,7 +298,7 @@ h2 {
 }
 
 .contact {
-  background: url(NeonLounge.png) center / cover no-repeat;
+  background: url(CoastalTable.png) center / cover no-repeat;
   text-align: center;
   padding: 5rem 2rem;
   background: #222;
@@ -365,7 +365,7 @@ section {
   background: #111;
 }
 .contact {
-  background: url(NeonLounge.png) center / cover no-repeat;
+  background: url(CoastalTable.png) center / cover no-repeat;
 }
 
 .contact-overlay {
@@ -608,8 +608,7 @@ section {
   .card2-title {
     font-size: 2rem;
   }
-  
-  /* Improved mobile card layout */
+
   .card {
     grid-template-areas:
       "title title title"
@@ -677,8 +676,7 @@ section {
     padding: 1rem;
     font-size: 1rem;
   }
-  
-  /* Hero section mobile adjustments */
+
   .hero-overlay {
     width: 90%;
     padding: 2rem;
@@ -691,8 +689,7 @@ section {
   .hero-overlay p {
     font-size: 1rem;
   }
-  
-  /* Section adjustments */
+
   section {
     padding: 3rem 1rem;
   }
@@ -700,8 +697,7 @@ section {
   .about-text h2 {
     font-size: 2rem;
   }
-  
-  /* Navigation adjustments */
+
   .logo-text img {
     height: 3rem;
   }
@@ -709,8 +705,7 @@ section {
   .navbar {
     padding: 0.5rem 1rem;
   }
-  
-  /* Contact section adjustments */
+
   .contact-overlay {
     padding: 1.5rem;
   }
@@ -718,8 +713,7 @@ section {
   .contact-overlay h2 {
     font-size: 2rem;
   }
-  
-  /* Hide dividers on mobile */
+
   .divider {
     display: none;
   }
@@ -737,8 +731,7 @@ section {
   .navbar {
     padding: 2rem 3.5rem;
   }
-  
-  /* Even smaller adjustments for very small screens */
+
   .hero-overlay h1 {
     font-size: 2rem;
   }
