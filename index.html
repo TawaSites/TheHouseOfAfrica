@@ -18,19 +18,6 @@
   </p>
   
 </head>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
-
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-      hamburger.classList.toggle("active");
-    });
-  });
-</script>
-
 <body>
   <nav class="navbar">
     <div class="logo-text">
@@ -201,6 +188,18 @@
   <footer>
     <p>&copy; 2025 The House Of Africa | Designed with <i>love</i> by Tawa</p>
   </footer>
+ 
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+    });
+  </script>
 </body>
 </html>
 
