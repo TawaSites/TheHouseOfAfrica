@@ -15,6 +15,22 @@ html, body {
   background: url('CoastalTable.png') center/cover no-repeat;
 }
 
+.startersbg {
+  background: url('ImageOne.png') center/cover no-repeat;
+}
+
+.mainsbg {
+  background: url('ImageTwo.png') center/cover no-repeat;
+}
+
+.dessertsbg {
+  background: url('ImageThree.png') center/cover no-repeat;
+}
+
+.drinksbg {
+  background: url('ImageFour.png') center/cover no-repeat;
+}
+
 .navbar {
   position: fixed;
   top: 0;
