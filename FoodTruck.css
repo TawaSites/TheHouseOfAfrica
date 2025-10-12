@@ -404,14 +404,14 @@ section {
 }
 
 .card {
-  display: grid;
+  display: inline-block;
   grid-template-areas:
-    "title title title"
-    "text text image"
-    "text text image";
-  grid-template-columns: 1.6fr 3fr;
-  gap: 0.4rem;
-  max-width: 90vw;
+    "title"
+    "image"
+    "text";
+  grid-template-columns: 1.6fr 0.2fr;
+  gap: 0.1rem;
+  max-width: 20vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
@@ -425,7 +425,7 @@ section {
   padding: 0.3rem;
   border-radius: 12px;
   font-size: 4rem;
-  width: 95%;
+  width: 100%;
   margin-left: 0vw;
   margin-bottom: 2rem;
   font-weight: bold;
