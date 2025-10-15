@@ -587,7 +587,6 @@ section {
   transform: scale(1.2);
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 1223px) {
   .nav-links {
     display: none;
