@@ -432,7 +432,7 @@ section {
     "text";
   grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  max-width: 20vw;
+  max-width: 30vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
@@ -456,13 +456,13 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 15vw;
-  height: 15vw;
+  width: 21.5vw;
+  height: 21.5vw;
 }
 
 .card-image img {
-  width: 15vw;
-  height: 15vw;
+  width: 21.5vw;
+  height: 21.5vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
