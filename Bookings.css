@@ -410,20 +410,35 @@ section {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card, .card2 {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 .card {
-  display: grid;
+  display: inline-block;
   grid-template-areas:
-    "title title title"
-    "text text image"
-    "text text image";
-  grid-template-columns: 1.6fr 3fr;
+    "title"
+    "image"
+    "text";
+  grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  max-width: 90vw;
+  max-width: 20vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
   color: #fff;
   background: rgb(0, 0, 0, 0.7);
+  margin: 2vw;
 }
 
 .card-title {
@@ -432,7 +447,7 @@ section {
   padding: 0.3rem;
   border-radius: 12px;
   font-size: 4rem;
-  width: 95%;
+  width: 100%;
   margin-left: 0vw;
   margin-bottom: 2rem;
   font-weight: bold;
@@ -458,7 +473,8 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  width: 95%;
+  margin-top: 2vh;
+  width: 100%;
 }
 
 .card-link a {
@@ -497,19 +513,20 @@ section {
 }
 
 .card2 {
-  display: grid;
+  display: inline-block;
   grid-template-areas:
-    "title title title"
-    "image text text"
-    "image text text";
-  grid-template-columns: 1.6fr 3fr;
+    "title"
+    "image"
+    "text";
+  grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  max-width: 90vw;
+  max-width: 20vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
   color: #fff;
   background: rgb(0, 0, 0, 0.7);
+  margin: 2vw;
 }
 
 .card2-title {
@@ -518,7 +535,7 @@ section {
   padding: 0.3rem;
   border-radius: 12px;
   font-size: 4rem;
-  width: 95%;
+  width: 100%;
   margin-left: 0vw;
   margin-bottom: 2rem;
   font-weight: bold;
@@ -544,8 +561,10 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  width: 95%;
+  margin-top: 2vh;
+  width: 100%;
 }
+
 
 .card2-link {
   z-index: 2000;
@@ -575,7 +594,6 @@ section {
   transform: scale(1.2);
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 1223px) {
   .nav-links {
     display: none;
