@@ -403,6 +403,20 @@ section {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card, .card2 {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
 .card {
   display: inline-block;
   grid-template-areas:
