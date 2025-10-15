@@ -19,25 +19,71 @@
   
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo-text">
-      <a href="#home"><img src="LogoCondensed.png" alt="House of Africa Logo"></a>
+<!-- HEADER -->
+<div class="header header--sticky">
+  <div class="header__inner">
+    <div class="header-logo">
+      <a href="#home" class="header-logo__inner" aria-label="Home">
+        <img src="LogoCondensed.png" alt="House of Africa Logo">
+      </a>
     </div>
-    <ul class="nav-links">
-      <li><a href="#about" class="nav-gold">About</a></li>
-      <li><a href="#ct" class="nav-green">Coastal Table</a></li>
-      <li><a href="#nl" class="nav-red">Neon Lounge</a></li>
-      <li><a href="#sp" class="nav-blue">Spice Pot</a></li>
-      <li><a href="#otf" class="nav-gold">Over The Fire</a></li>
-      <li><a href="#mr" class="nav-green">Mural Room</a></li>
-      <li><a href="#contact" class="nav-blue">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-     </div>
-  </nav>
+
+    <nav class="site-nav">
+      <ul class="site-nav__desktop">
+        <li class="site-nav__item"><a href="#about" class="nav-gold">About</a></li>
+
+        <li class="site-nav__item header-dropdown--has-dropdown">
+          <a href="#ct" class="nav-green">Coastal Table ▾</a>
+          <div class="header-dropdown">
+            <a href="CoastalTableMenu.html" class="header-dropdown__link">Menu</a>
+            <a href="Bookings.html" class="header-dropdown__link">Book a Table</a>
+          </div>
+        </li>
+
+        <li class="site-nav__item header-dropdown--has-dropdown">
+          <a href="#nl" class="nav-red">Neon Lounge ▾</a>
+          <div class="header-dropdown">
+            <a href="NeonLoungeMenu.html" class="header-dropdown__link">Menu</a>
+            <a href="Bookings.html" class="header-dropdown__link">Book a Table</a>
+          </div>
+        </li>
+
+	<li class="site-nav__item header-dropdown--has-dropdown">
+          <a href="#sp" class="nav-blue">Spice Pot ▾</a>
+          <div class="header-dropdown">
+            <a href="SpicePotMenu.html" class="header-dropdown__link">Menu</a>
+            <a href="Bookings.html" class="header-dropdown__link">Book a Table</a>
+          </div>
+        </li>
+
+        <li class="site-nav__item header-dropdown--has-dropdown">
+          <a href="#otf" class="nav-gold">Over The Fire ▾</a>
+          <div class="header-dropdown">
+            <a href="OverTheFireMenu.html" class="header-dropdown__link">Menu</a>
+            <a href="Bookings.html" class="header-dropdown__link">Book a Table</a>
+          </div>
+        </li>
+
+	<li class="site-nav__item header-dropdown--has-dropdown">
+          <a href="#mr" class="nav-green">Mural Room ▾</a>
+          <div class="header-dropdown">
+            <a href="MuralRoomMenu.html" class="header-dropdown__link">Menu</a>
+            <a href="Bookings.html" class="header-dropdown__link">Book a Table</a>
+          </div>
+        </li>
+
+        <li class="site-nav__item"><a href="#contact" class="nav-blue">Contact</a></li>
+
+      </ul>
+<!-- MOBILE -->
+      <button class="header__hamburger" aria-label="Menu Button">
+        <span class="header__hamburger-box">
+          <span class="header__hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+  </div>
+</div>
 <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-overlay">
@@ -201,9 +247,3 @@
   </script>
 </body>
 </html>
-
-
-<p style="display: none;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L80,74.7C160,85,320,107,480,101.3C640,96,800,64,960,58.7C1120,53,1280,75,1360,85.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,320L80,304C160,288,320,256,480,256C640,256,800,288,960,277.3C1120,267,1280,213,1360,186.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> 
-</p>
