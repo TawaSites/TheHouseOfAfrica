@@ -456,17 +456,18 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 15vw;
-  height: 15vw;
+  width: 21.5vw;
+  height: 21.5vw;
 }
 
 .card-image img {
-  width: 15vw;
-  height: 15vw;
+  width: 21.5vw;
+  height: 21.5vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
 }
+
 
 .card-text {
   grid-area: text;
