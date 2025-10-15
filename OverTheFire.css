@@ -13,6 +13,12 @@
   }
 }
 
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 html, body {
   height: 100%;
   font-family: 'Barlow Condensed', sans-serif;
