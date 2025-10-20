@@ -116,6 +116,7 @@ html, body {
 }
 
 .hero-overlay {
+  z-index: 1000;
   text-align: center;
   background: rgba(0, 0, 0, 0.7);
   padding: 4rem;
