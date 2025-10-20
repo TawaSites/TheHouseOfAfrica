@@ -42,22 +42,6 @@ h2 {
   background: url('CoastalTable.png') center/cover no-repeat;
 }
 
-.startersbg {
-  background: url('CT1.png') center/cover no-repeat;
-}
-
-.mainsbg {
-  background: url('CT2.png') center/cover no-repeat;
-}
-
-.dessertsbg {
-  background: url('CT3.png') center/cover no-repeat;
-}
-
-.drinksbg {
-  background: url('CT4.png') center/cover no-repeat;
-}
-
 .navbar {
   position: fixed;
   top: 0;
@@ -230,86 +214,6 @@ h2 {
 
 .item:hover {
   transform: scale(1.05);
-}
-
-.nl h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #DE3831;
-}
-
-.nl-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.nl img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #002395;
-}
-
-.sp h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #002395;
-}
-
-.sp-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.sp img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #FFB612;
-}
-
-.otf h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #FFB612;
-}
-
-.otf-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.otf img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #007A4D;
-}
-
-.mr h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #007A4D;
-}
-
-.mr-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
-
-.mr img {
-  width: 300px;
-  border-radius: 10px;
-  border: 4px solid #002395;
 }
 
 .contact {
