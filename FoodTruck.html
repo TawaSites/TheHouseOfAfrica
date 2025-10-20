@@ -32,22 +32,36 @@
 </script>
 
 <body>
-  <nav class="navbar">
-    <div class="logo-text">
-      <a href="index.html"><img src="LogoCondensed.png" alt="House of Africa Logo"></a>
+<div class="header header--sticky">
+  <div class="header__inner">
+    <div class="header-logo">
+      <a href="#home" class="header-logo__inner" aria-label="Home">
+        <img src="LogoCondensed.png" alt="House of Africa Logo">
+      </a>
     </div>
-    <ul class="nav-links">
-	  <li><a href="index.html" class="nav-gold">Main Site</a></li>
-      <li><a href="#home" class="nav-green">Home</a></li>
-      <li><a href="#menu" class="nav-red">Menu</a></li>
-      <li><a href="#contact" class="nav-blue">Contact</a></li>
-    </ul>
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-     </div>
-  </nav>
+    <nav class="site-nav">
+      <ul class="site-nav__desktop">
+        <li class="site-nav__item">
+          <a href="#starters" class="nav-gold">Main Site</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#mains" class="nav-green">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a href="#desserts" class="nav-red">Menu</a>
+		</li>
+        <li class="site-nav__item">
+			<a href="#contact" class="nav-blue">Contact</a></li>
+      </ul>
+<!-- MOBILE HAMBURGUR-->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+	</nav>
+  </div>
+</div>
 
   <section id="home" class="hero">
     <div class="hero-overlay">
