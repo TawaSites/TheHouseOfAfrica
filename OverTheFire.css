@@ -130,7 +130,7 @@ h2 {
 
 .hero {
   background: url('OverTheFire.png') center/cover no-repeat;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -770,5 +770,192 @@ section {
   
   .card-text, .card2-text {
     font-size: 0.9rem;
+  }
+}
+
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  transition: background 0.4s ease;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+}
+
+.header-logo img {
+  height: 3.5rem;
+  transition: transform 0.3s ease;
+}
+.header-logo img:hover {
+  transform: scale(1.05);
+}
+
+.site-nav__desktop {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.site-nav__item a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.site-nav__item a:hover {
+  transform: translateY(-3px);
+}
+
+.header-dropdown {
+  z-index: 10000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(20, 20, 20, 0.95);
+  border-radius: 6px;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.header-dropdown__link {
+  padding: 0.6rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.header-dropdown__link:hover {
+  background: #FFB612;
+  color: #000;
+}
+
+.header-dropdown--has-dropdown {
+  position: relative;
+}
+.header-dropdown--has-dropdown:hover .header-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.header__hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 4000;
+}
+.header__hamburger-box {
+  width: 28px;
+  height: 22px;
+  position: relative;
+}
+.header__hamburger-inner,
+.header__hamburger-inner::before,
+.header__hamburger-inner::after {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+.header__hamburger-inner::before,
+.header__hamburger-inner::after {
+  content: "";
+  left: 0;
+}
+.header__hamburger-inner::before { top: -8px; }
+.header__hamburger-inner::after { top: 8px; }
+
+.header__hamburger.active .header__hamburger-inner {
+  transform: rotate(45deg);
+}
+.header__hamburger.active .header__hamburger-inner::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+.header__hamburger.active .header__hamburger-inner::after {
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .site-nav__desktop {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem;
+    border-radius: 0 0 0 12px;
+  }
+  .site-nav__desktop.active {
+    display: flex;
+  }
+  .header__hamburger {
+    display: block;
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 4000;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .site-nav__desktop {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem;
+    border-radius: 0 0 0 12px;
+    width: 200px;
+  }
+
+  .site-nav__desktop.active {
+    display: flex;
   }
 }
