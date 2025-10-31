@@ -385,13 +385,13 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 40vw;
-  height: 40vw;
+  width: 21.5vw;
+  height: 21.5vw;
 }
 
 .card-image img {
-  width: 40vw;
-  height: 40vw;
+  width: 21.5vw;
+  height: 21.5vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -402,7 +402,7 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  margin-top: 6vh;
+  margin-top: 2vh;
   width: 100%;
 }
 
@@ -806,4 +806,24 @@ section {
 	.hero h1 {
 		font-size: 3em;
 	}
+	.card-image {
+      grid-area: image;
+      width: 40vw;
+  	  height: 40vw;
+	}
+    .card-image img {
+ 	 width: 40vw;
+ 	 height: 40vw;
+	 border-radius: 10px;
+  	 display: block;
+  	 border: 6px solid #007A4D;
+    }
+    .card-text {
+     grid-area: text;
+     background: #222;
+     padding: 1rem;
+  	 border-radius: 10px;
+  	 margin-top: 6vh;
+  	 width: 100%;
+ 	}
 }
