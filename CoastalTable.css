@@ -879,3 +879,14 @@ section {
     display: flex;
   }
 }
+
+@media (max-width: 412px) {
+	.hero-overlay {
+		font-size: 15px;
+		width: 100%;
+		padding: 10vh;
+	}
+	.hero h1 {
+		font-size: 3em;
+	}
+}
