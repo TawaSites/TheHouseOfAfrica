@@ -362,7 +362,6 @@ section {
     "text";
   grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  max-width: 30vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
