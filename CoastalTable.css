@@ -13,11 +13,19 @@
   }
 }
 
-.about-text {
+@media (max-width: 524px) {
+  .about-text {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+  }
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 html, body {
