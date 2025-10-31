@@ -385,13 +385,13 @@ section {
 
 .card-image {
   grid-area: image;
-  width: 21.5vw;
-  height: 21.5vw;
+  width: 40vw;
+  height: 40vw;
 }
 
 .card-image img {
-  width: 21.5vw;
-  height: 21.5vw;
+  width: 40vw;
+  height: 40vw;
   border-radius: 10px;
   display: block;
   border: 6px solid #007A4D;
@@ -402,7 +402,7 @@ section {
   background: #222;
   padding: 1rem;
   border-radius: 10px;
-  margin-top: 2vh;
+  margin-top: 6vh;
   width: 100%;
 }
 
