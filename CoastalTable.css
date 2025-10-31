@@ -575,14 +575,10 @@ section {
   }
   
   .card-image {
-    width: 80vw;
-    height: 80vw;
     margin: 0 auto;
   }
   
   .card-image img {
-    width: 80vw;
-    height: 80vw;
   }
   
   .card-text {
@@ -609,14 +605,10 @@ section {
   }
   
   .card2-image {
-    width: 80vw;
-    height: 80vw;
     margin: 0 auto;
   }
   
   .card2-image img {
-    width: 80vw;
-    height: 80vw;
   }
   
   .card2-text {
