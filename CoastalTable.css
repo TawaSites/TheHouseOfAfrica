@@ -806,6 +806,8 @@ section {
 	.hero h1 {
 		font-size: 3em;
 	}
+}
+@media (max-width: 524px) {
 	.card-image {
       grid-area: image;
       width: 40vw;
