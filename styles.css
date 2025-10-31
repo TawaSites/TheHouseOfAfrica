@@ -821,11 +821,11 @@ section {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 412px) {
 	.hero-overlay {
 		font-size: 15px;
 		width: 100%;
-		padding: 50px;
+		padding: 10vh;
 	}
 	.hero h1 {
 		font-size: 3em;
