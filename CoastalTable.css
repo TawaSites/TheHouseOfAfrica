@@ -512,36 +512,6 @@ section {
     padding: 1rem;
     font-size: 1rem;
   }
-  
-  .card2 {
-    grid-template-areas:
-      "title title title"
-      "image image image"
-      "text text text";
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .card2-title {
-    font-size: 1.8rem;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .card2-image {
-    margin: 0 auto;
-  }
-  
-  .card2-image img {
-  }
-  
-  .card2-text {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-  }
 
   .hero-overlay {
     width: 90%;
