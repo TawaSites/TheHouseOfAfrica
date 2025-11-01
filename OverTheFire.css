@@ -13,6 +13,15 @@
   }
 }
 
+@media (max-width: 800px) {
+  .about-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
 .about-text {
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +243,7 @@ h2 {
 }
 
 .contact {
-  background: url(OverTheFire.png) center / cover no-repeat;
+  background: url('OverTheFire.png') center / cover no-repeat;
   text-align: center;
   padding: 5rem 2rem;
   background: #222;
@@ -301,7 +310,7 @@ section {
   background: #111;
 }
 .contact {
-  background: url(OverTheFire.png) center / cover no-repeat;
+  background: url('OverTheFire.png') center / cover no-repeat;
 }
 
 .contact-overlay {
@@ -353,7 +362,6 @@ section {
     "text";
   grid-template-columns: 1.6fr 0.2fr;
   gap: 0.4rem;
-  max-width: 30vw;
   margin: 0rem auto;
   padding: 2rem;
   border-radius: 12px;
@@ -388,7 +396,6 @@ section {
   display: block;
   border: 6px solid #007A4D;
 }
-
 
 .card-text {
   grid-area: text;
@@ -434,88 +441,6 @@ section {
   transform: scale(1.1);
 }
 
-.card2 {
-  display: inline-block;
-  grid-template-areas:
-    "title"
-    "image"
-    "text";
-  grid-template-columns: 1.6fr 0.2fr;
-  gap: 0.4rem;
-  max-width: 20vw;
-  margin: 0rem auto;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  background: rgb(0, 0, 0, 0.7);
-  margin: 2vw;
-}
-
-.card2-title {
-  grid-area: title;
-  text-align: center;
-  padding: 0.3rem;
-  border-radius: 12px;
-  font-size: 4rem;
-  width: 100%;
-  margin-left: 0vw;
-  margin-bottom: 2rem;
-  font-weight: bold;
-  background: #111;
-}
-
-.card2-image {
-  grid-area: image;
-  width: 15vw;
-  height: 15vw;
-}
-
-.card2-image img {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 10px;
-  display: block;
-  border: 6px solid #007A4D;
-}
-
-.card2-text {
-  grid-area: text;
-  background: #222;
-  padding: 1rem;
-  border-radius: 10px;
-  margin-top: 2vh;
-  width: 100%;
-}
-
-
-.card2-link {
-  z-index: 2000;
-  grid-area: link;
-  padding: 1rem;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.card2-link a {
-  display: inline-flex;     
-  justify-content: center;  
-  align-items: center;       
-  padding: 2vw 20vw;     
-  background: #FFB612;       
-  color: #000;              
-  border-radius: 8px;           
-  font-weight: 700;
-  text-decoration: none;     
-  min-width: 150px;      
-  text-align: center;
-  transition: background 0.3s;
-}
-
-.card2-link a:hover {
-  background: #DE3831;
-  transform: scale(1.2);
-}
-
 @media (max-width: 1223px) {
   .nav-links {
     display: none;
@@ -554,10 +479,7 @@ section {
     min-height: 100vh; 
     height: auto;     
   }
-  .card2-title {
-    font-size: 2rem;
-  }
-
+  
   .card {
     grid-template-areas:
       "title title title"
@@ -576,51 +498,13 @@ section {
   }
   
   .card-image {
-    width: 80vw;
-    height: 80vw;
     margin: 0 auto;
   }
   
   .card-image img {
-    width: 80vw;
-    height: 80vw;
   }
   
   .card-text {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  
-  .card2 {
-    grid-template-areas:
-      "title title title"
-      "image image image"
-      "text text text";
-    grid-template-columns: 1fr;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .card2-title {
-    font-size: 1.8rem;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .card2-image {
-    width: 80vw;
-    height: 80vw;
-    margin: 0 auto;
-  }
-  
-  .card2-image img {
-    width: 80vw;
-    height: 80vw;
-  }
-  
-  .card2-text {
     width: 100%;
     padding: 1rem;
     font-size: 1rem;
@@ -662,7 +546,7 @@ section {
   .contact-overlay h2 {
     font-size: 2rem;
   }
-  
+
   .divider {
     display: none;
   }
@@ -680,20 +564,19 @@ section {
   .navbar {
     padding: 2rem 3.5rem;
   }
-  
+
   .hero-overlay h1 {
     font-size: 2rem;
   }
   
-  .card-title, .card2-title {
+  .card-title {
     font-size: 1.5rem;
   }
   
-  .card-text, .card2-text {
+  .card-text {
     font-size: 0.9rem;
   }
 }
-
 
 .header {
   position: sticky;
@@ -879,4 +762,36 @@ section {
   .site-nav__desktop.active {
     display: flex;
   }
+}
+
+@media (max-width: 412px) {
+	.hero-overlay {
+		font-size: 15px;
+		width: 100%;
+		padding: 10vh;
+	}
+	.hero h1 {
+		font-size: 3em;
+	}
+}
+@media (max-width: 800px) {
+	.card-image {
+      grid-area: image;
+      width: 40vw;
+  	  height: 40vw;
+	}
+    .card-image img {
+ 	 width: 40vw;
+ 	 height: 40vw;
+	 border-radius: 10px;
+  	 display: block;
+  	 border: 6px solid #007A4D;
+    }
+    .card-text {
+     grid-area: text;
+     background: #222;
+     padding: 1rem;
+  	 border-radius: 10px;
+  	 width: 100%;
+ 	}
 }
