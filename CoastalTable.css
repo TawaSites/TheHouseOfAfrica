@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: 524px) {
+@media (max-width: 800px) {
   .about-text {
     display: flex;
     flex-wrap: wrap;
@@ -807,7 +807,7 @@ section {
 		font-size: 3em;
 	}
 }
-@media (max-width: 524px) {
+@media (max-width: 800px) {
 	.card-image {
       grid-area: image;
       width: 40vw;
