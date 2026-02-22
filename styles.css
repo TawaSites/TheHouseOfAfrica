@@ -18,27 +18,27 @@ html, body {
 
 .CTBG {
   background: url('CoastalTable.png') center/cover no-repeat;
-  height: 130vh;
+  height: 100vh;
 }
 
 .NLBG {
   background: url('NeonLounge.png') center/cover no-repeat;
-  height: 130vh;
+  height: 100vh;
 }
 
 .SPBG {
   background: url('SpicePot.png') center/cover no-repeat;
-  height: 130vh;
+  height: 100vh;
 }
 
 .OTFBG {
   background: url('OverTheFire.png') center/cover no-repeat;
-  height: 130vh;
+  height: 100vh;
 }
 
 .MRBG {
   background: url('MuralRoom.png') center/cover no-repeat;
-  height: 130vh;
+  height: 100vh;
 }
 
 /* Navbar Styles */
